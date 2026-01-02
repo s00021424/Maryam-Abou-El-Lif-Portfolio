@@ -1,0 +1,1002 @@
+/* FONTS */
+
+@font-face {
+  font-family: "Coolvetica Book";
+  src:
+    local("Coolvetica Book"),
+    url("assets/fonts/CoolveticaBk-Regular.ttf") format(truetype);
+}
+
+@font-face {
+  font-family: "Coolvetica Light";
+  src:
+    local("Coolvetica Light"),
+    url("assets/fonts/CoolveticaLt-Regular.ttf") format(truetype);
+}
+
+@font-face {
+  font-family: "Editorial Old Italic";
+  src:
+    local("Editorial Old Italic"),
+    url("assets/fonts/PPEditorialOld-Italic.otf") format(opentype);
+}
+
+
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+
+
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e151c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #db7093;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d24b78;
+}
+
+
+
+body{
+    background-color: #1e151c;
+    width: 100%;
+}
+
+
+
+/* NAVIGATION */
+
+nav{
+    background-color: #1e151c;
+    position: fixed;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    top:0;
+    z-index: 9999;
+}
+
+nav > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* navigation logo */
+
+.logo-link{
+    text-decoration: none;
+}
+
+#nav-logo{
+    color: #ffecda;
+    font-family: "Editorial Old Italic";
+    font-synthesis: none;
+    font-size: 2rem;
+}
+
+
+/* navigation links */
+
+#nav-links-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    background-color: #1e151c;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    padding: 20vw 15% 15% 15%;
+    align-items: center;
+    border-radius: 0 0 30px 30px
+    }
+
+
+.inactive{
+    right: -100%;
+    transition-duration: 0.7s;
+}
+
+
+.active{
+    right: 0%;
+    transition-duration: 0.7s;
+}
+
+
+.nav-links-item{
+    list-style-type: none;
+}
+
+
+.link{
+    text-decoration: none;
+    font-family: "Coolvetica Book";
+    font-synthesis: none;
+    color: #ffecda;
+    font-size: 1.5rem;
+}
+
+
+.link:hover{
+    color: #db7093;
+}
+
+
+.link:active{
+    color: #d24b78;
+}
+
+
+#hamburger-menu-icon{
+    height: 2rem;
+    display: inline;
+    z-index: 999999;
+}
+
+
+/* GENERAL STYLING */
+
+main{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vw;
+}
+
+section{
+    padding: 5%;
+    scroll-margin-top: 80px;
+}
+
+footer{
+    padding: 5%;
+    margin: 5% 0;
+}
+
+.section-contents{
+    display:flex;
+    flex-direction:row;
+    column-gap: 5%;
+}
+
+.section-text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    font-synthesis: none;
+}
+
+h1{
+    font-family: "Coolvetica Book";
+    font-synthesis: none;
+    font-size: 4rem; 
+}
+
+h2{
+    font-family: "Coolvetica Book";
+    font-synthesis: none;
+    color: #ffecda;
+    font-size: 3rem; 
+}
+
+span{
+    font-family: "Editorial Old Italic";
+}
+
+h3{
+    font-family: "Coolvetica Book";
+    font-synthesis: none;
+    color: #ffecda;
+    font-size: 2rem;
+    text-align: center;
+}
+
+p{
+    font-family: "Coolvetica Light";
+    font-synthesis: none;
+    color: #ffecda;
+    font-size: 1.25rem; 
+    line-height: 1.4em;
+}
+
+
+
+
+
+
+
+/* INTRODUCTION */
+
+#introduction{
+    padding: 5rem 1.5% 1.5% 1.5%; 
+}
+
+#intro-contents{
+    background-color: #ffecda;
+    width: 100%;
+    height: 70vh;
+    max-height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    row-gap: 1.5rem;
+    border-radius: 40px;
+}
+
+#intro-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    font-family: "Coolvetica Book";
+    font-synthesis: none;
+}
+
+.location{
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.4rem;
+    align-items: center;
+}
+
+.location-paragraph{
+    font-size: 1rem;
+    font-family: "Coolvetica Book";
+    color: #1e151c;
+}
+
+#intro-title {
+    font-size: 2.6rem;
+    color: #1e151c;
+    text-align: center;
+}
+
+#intro-title-break-2{
+   display: inline;
+}
+
+
+#intro-subtitle {
+    font-family: "Editorial Old Italic";
+    font-synthesis: none;
+    color: #1e151c;
+    line-height: 2em;
+    font-size: 1rem;
+    text-align: center;
+}
+
+#intro-subtitle-break-1, #intro-subtitle-break-2{
+    display: inline;
+}
+
+button {
+    background-color: #db7093;
+    border-style: none;
+    color: #ffecda;
+    font-family: "Coolvetica Light";
+    font-size: 1.25rem; 
+    font-synthesis: none;
+    padding: 0.2em 0.8em 0.3em;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d24b78;
+}
+
+button:active {
+    background-color: #d24b78;
+}
+
+
+
+
+/* WELCOME SECTION */
+#welcome-title{
+    color: #ffecda;
+}
+
+
+
+/* ABOUT SECTION */
+
+#about-text{
+    align-items: center;
+    row-gap: 2rem;
+}
+
+#about-text > div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+}
+
+.about-topic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    width: 100%;
+}
+
+.about-topic > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+.about-topic p{
+    display: inline;
+    text-align: left;
+}
+
+.about-bio-image{
+    background-color: #db7093;
+    width:80%;
+    max-width: 400px;
+    border-radius: 30px;
+    border: solid 2px #db7093;
+    overflow: hidden;
+}
+
+#biography-image, #objectives-image{
+    float: none;
+    margin: 0;
+}
+
+#career-objectives{
+    text-align: left;
+}
+
+
+
+/* RESUME SECTION */
+
+#resume-contents, #contact-contents{
+    display:flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+    align-items: center;
+}
+
+#resume-text{
+   align-items: center;
+}
+
+#resume-paragraph{
+    text-align: center;
+    width: 80%;
+}
+
+table{
+    border: solid 1px #ffecda;
+    border-radius: 30px;
+    padding: 1.5em;
+    width: 95%;
+    max-width: 1000px;
+}
+
+tr{
+    display:flex;
+    flex-direction: column;
+}
+
+.resume-header{
+    display:flex;
+    flex-direction:row;
+    column-gap: 1em;
+    align-items: center;
+    padding-right: 5em;
+    text-align: left;
+    font-size: 0.875rem;
+    vertical-align: top;
+    color: #ffecda;
+    font-family: "Coolvetica Light";
+    font-synthesis: none;
+}
+
+.resume-header, .resume-row{
+        border: 0;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 1em;
+        padding-bottom: 1em;
+    }
+
+
+.resume-header > img, .skills-list-item > img{
+    height: 2em;
+}
+
+.resume-row{
+    text-align: left;
+    font-size: 0.875rem;
+    vertical-align: top;
+    color: #ffecda;
+    font-family: "Coolvetica Light";
+    font-synthesis: none;
+    line-height: 2em;
+}
+
+.resume-list{
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+
+
+hr{
+    display: none;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+
+#skills-list{
+    list-style-type: none;
+}
+
+
+.skills-list-item{
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.4em;
+    align-items: center;
+}
+
+
+
+
+/* CONTACT SECTION */
+
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 4%;
+}
+
+#identity-inputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 0.3rem;
+}
+
+.form-field{
+    background-color: #ffecda;
+    font-size: 1rem;
+    border-radius: 30px;
+    padding: 0.3em 1em;
+    border: 2px solid #1e151c;
+    font-family: "Coolvetica Light";
+    font-synthesis: none;
+    color: #1e151c;
+    width: 100%;
+}
+
+.form-field:focus{
+    border-color: #db7093;
+    outline: none;
+}
+
+.form-field::placeholder{
+    font-family: "Coolvetica Light";
+    font-synthesis: none;
+    color: #7c7b7bff;
+}
+
+#message{
+    padding: 1em;
+}
+
+#contact-me-lottie{
+    display: none;
+}
+
+#contact-text{
+    align-items: center;
+}
+
+#contact-text > p {
+    text-align: center;
+}
+
+
+
+
+
+/* FOOTER */
+
+footer > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2.5rem;
+}
+
+#location-footer{
+    align-items: flex-start;
+}
+
+#location-paragraph-footer {
+    color: #ffecda;
+    font-size: 2rem;
+}
+
+ #location-paragraph-footer-break-1{
+    display:inline;
+}
+
+#footer-details{
+    display:flex;
+    flex-direction: column;
+    row-gap: 1em;
+    align-items: center;
+}
+
+#footer-details > div{
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.25em;
+}
+
+#footer-details img{
+    height: 2.5rem;
+}
+
+#footer-details > p{
+    font-family: "Coolvetica Light";
+    font-synthesis: none;
+    color: #ffecda;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+#footer-copyright-break-1, #footer-copyright-break-3{
+    display:none;
+}
+
+fr{
+    display: block;
+    height: 1px;
+    border:0;
+    border-top: 1px solid #ccc;
+    margin-top: 5%;
+    padding-top: 5%;
+}
+
+#footer-logo{
+    color:#ffecda;
+    font-family: "Editorial Old Italic";
+    font-synthesis: none;
+    font-size: 7rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 480px){
+
+    /* INTRODUCTION */
+
+    #intro-subtitle {
+        font-size: 1.3rem; 
+    }
+
+
+    #intro-subtitle-break-2{
+        display: none;
+    }
+
+
+
+    /* FOOTER */
+
+    footer > div{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    #footer-details{
+        align-items: flex-end;
+    }
+
+    #footer-details > p{
+        text-align: right;
+    }
+
+    #footer-copyright-break-1, #footer-copyright-break-3{
+        display:inline;
+    }
+
+    #footer-logo{
+        font-size: 8rem;
+    }
+
+}
+
+
+
+@media screen and (min-width: 580px){
+
+    /* NAVIGATION */
+
+    #hamburger-menu-icon{
+        display: none;
+    }
+
+    
+    #nav-links-container{
+        flex-direction: row;
+        column-gap: 1.5rem;
+        background-color: transparent;
+        width: auto;
+        padding: 0;
+        position: static;
+        align-items: flex-start;
+        border-radius: 0;
+    }
+
+
+    .inactive, .active{
+        transition-duration: 0s;
+    }
+
+
+
+    /* GENERAL STYLING */
+
+    section{
+        scroll-margin-top: 70px;
+    }
+
+
+
+    /* INTRODUCTION */
+    
+    #intro-contents{
+        height: 80vh;
+    }
+
+    #intro-title-break-2{
+        display: none;
+    }
+
+
+    /* ABOUT SECTION */
+
+    #background-biography, #about-text {
+        align-items: flex-start;
+    }
+
+    .about-topic > div{
+        display: block;
+    }
+
+    .about-bio-image{
+        width: 50%;
+    }
+
+
+    #biography-image{
+        margin: 0 0 5% 5%;
+        float: right;
+        shape-outside: margin-box;
+    }
+
+    #objectives-image{
+        margin: 0 5% 5% 0;
+        float: left;
+        shape-outside: margin-box;
+    }
+
+    #career-objectives{
+       align-items: flex-end;
+       text-align: right;
+    }
+
+
+    /* RESUME SECTION */
+
+    table{
+        width: 90%;
+    }
+
+
+    /* FOOTER */
+    #footer-logo{
+        font-size: 9.5rem;
+    }
+
+    #footer-copyright-break-1, #footer-copyright-break-3{
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 700px){
+
+    /* GENERAL STYLING */
+
+    section{
+        scroll-margin-top: 60px;
+    }
+
+
+
+    /* INTRODUCTION */
+
+    #intro-contents{
+        height: 80vh;
+    }
+
+    #intro-title {
+        font-size: 3rem; 
+    }
+    
+    #intro-subtitle {
+        font-size: 1.3rem; 
+    }
+
+
+
+    /* ABOUT SECTION */
+
+    .about-bio-image{
+        width: 40%;
+    }
+
+
+
+    /* FOOTER */
+
+    #footer-logo{
+        font-size: 12rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 900px){
+
+    /* INTRODUCTION */
+
+    section {
+        scroll-margin-top: 40px;
+    }
+
+    /* INTRODUCTION */
+
+    #intro-contents {
+        height: 85vh;
+    } 
+
+    #intro-title {
+        font-size: 3.5rem;
+    } 
+
+    #intro-subtitle {
+        font-size: 1.5rem;
+    }
+
+    
+     /* RESUME SECTION */
+
+    table{
+        width: 80%;
+    }
+
+    tr{
+        display:table-row;
+    }
+
+    .resume-row{
+        font-size: 1rem;
+    }
+
+    hr{
+        display: block;
+    }
+
+    .resume-header, .resume-row{
+        border: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+     .resume-header{
+        font-size: 1rem;
+        padding-right: 6.25em;
+    }
+
+
+
+
+    /* FOOTER */
+
+    #location-paragraph-footer-break-1{
+        display:none;
+    }
+
+    #footer-logo{
+        font-size: 16.5rem;
+    }
+} 
+
+    
+    
+    
+
+
+
+@media screen and (min-width: 1200px){
+
+    /* GENERAL STYTLING */
+
+    section{
+        scroll-margin-top: 20px;
+    }
+
+    #intro-title {
+        font-size: 4rem;
+    }
+    
+    #intro-subtitle {
+        font-size: 1.65rem;
+    }
+
+
+    /* ABOUT SECTION */
+
+    .about-bio-image{
+        width: 30%;
+    }
+
+
+
+
+    /* RESUME SECTION */
+    #resume-paragraph, table{
+        width: 75%;
+    }
+
+
+
+    /* CONTACT SECTION */
+
+    #contact-contents{
+        flex-direction: row;
+    }
+    #contact-me-lottie{
+        display: block;
+    }
+
+    #contact-text{
+        align-items: flex-start;
+    }
+
+    #contact-text > p {
+        text-align: left;
+    }
+
+
+    /* FOOTER */
+
+    #footer-logo{
+        font-size: 18.75rem;
+    }
+}
+
+  
+
+@media(orientation: landscape) and (min-height:260px) and (max-height: 450px){
+
+    /* NAVIGATION */
+
+    #nav-links-container{
+        flex-direction: column;
+        row-gap: 2rem;
+        background-color: #1e151c;
+        width: 30vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        padding: 20vh 15% 15% 15%;
+        align-items: center;
+    }
+
+    .inactive{
+        right: -100%;
+        transition-duration: 0.7s;
+    }
+
+    .active{
+        right: 0%;
+        transition-duration: 0.7s;
+    }
+
+
+    #hamburger-menu-icon{
+        display: inline;
+    }
+
+
+    /* INTRODUCTION */
+
+    #intro-contents{
+        height: 70vh;
+        row-gap: 1rem;
+    }
+
+    #intro-title{
+        font-size: 2rem;
+    }
+
+    #intro-subtitle{
+        font-size: 0.8rem;
+        line-height: 2em;
+    }
+
+    #intro-subtitle-break-1, #intro-subtitle-break-2{
+        display: none;
+    }
+
+}
