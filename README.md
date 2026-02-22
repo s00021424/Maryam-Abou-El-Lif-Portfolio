@@ -2,8 +2,6 @@
 
 A personal portfolio website built by **Maryam Abou El Lif**, a first-year Computer Engineering student at Epicode Institute of Technology in Milan, Italy. This project was developed as part of university coursework and serves as a living document of her growth as a developer.
 
-🌐 **Live Site:** [www.maryamabouellif.dev](https://www.maryamabouellif.dev)
-
 ---
 
 ## 📋 Table of Contents
